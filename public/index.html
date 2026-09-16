@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Sync - Assistir Junto</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 { margin-bottom: 5px; color: #ff4757; }
+        p { color: #a4b0be; margin-bottom: 30px; }
+        video {
+            width: 90%;
+            max-width: 800px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cine Sync 🍿</h1>
+    <p>Convide seus amigos, mande o link e assistam sincronizados!</p>
+
+    <!-- Exemplo de vídeo de código aberto (Big Buck Bunny) -->
+    <video id="videoPlayer" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <script src="script.js"></script>
+</body>
+</html>
